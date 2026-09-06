@@ -1,15 +1,15 @@
-# Urban Sound Classification
+# Классификация городских звуков
 
-Deep-learning experiments for classifying environmental audio from the UrbanSound8K dataset into ten categories.
+Эксперименты по классификации окружающих звуков из датасета UrbanSound8K на десять категорий с помощью глубокого обучения.
 
-The project covers raw-waveform classification, a manual log-Mel spectrogram implementation, recurrent and convolutional classifiers, and SpecAugment. Validation accuracy improved from approximately **24.8%** for the raw-signal baseline to **81.6%** with a Mel-spectrogram LSTM and **93.6%** with the CNN.
+В проекте рассмотрены классификация сырого аудиосигнала, ручная реализация логарифмической мел-спектрограммы, рекуррентные и свёрточные классификаторы, а также аугментация SpecAugment. Accuracy на валидационной выборке выросла примерно с **24,8%** для базовой модели на сыром сигнале до **81,6%** для LSTM на мел-спектрограммах и **93,6%** для CNN.
 
-## Stack
+## Технологии
 
-Python, PyTorch, TorchAudio, NumPy, pandas, scikit-learn, Matplotlib, and Seaborn.
+Python, PyTorch, TorchAudio, NumPy, pandas, scikit-learn, Matplotlib и Seaborn.
 
-## Data
+## Данные
 
-The raw audio is not stored in this repository because it is approximately 1.86 GB. Download UrbanSound8K from the [official dataset page](https://urbansounddataset.weebly.com/urbansound8k.html) and prepare the WAV files referenced by `data/train_part.csv` and `data/val_part.csv` under `data/data/`.
+Исходные аудиофайлы не хранятся в репозитории, поскольку занимают около 1,86 ГБ. Скачайте UrbanSound8K с [официальной страницы](https://urbansounddataset.weebly.com/urbansound8k.html) и подготовьте WAV-файлы, перечисленные в `data/train_part.csv` и `data/val_part.csv`, в каталоге `data/data/`.
 
-Open `urban_sound_classification.ipynb` to review or reproduce the experiments.
+Для просмотра или воспроизведения экспериментов откройте `urban_sound_classification.ipynb`.
